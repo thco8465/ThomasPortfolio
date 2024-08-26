@@ -672,16 +672,19 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background: url('/assets/img/full.PNG') center center / cover no-repeat; */
 }
 
+
 .hero img {
-  position: absolute;
+  position: relative;
   inset: 0;
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  object-fit: contain; 
+
 }
 
 .hero:before {
