@@ -51,9 +51,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home<br></a></li>
+          <li><a href="#home">Home<br></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -63,27 +64,27 @@
 
   <main class="main">
 
-<!-- Hero Section -->
-<section id="hero" class="hero section dark-background" style="position: relative; min-height: 100vh; overflow: hidden; background: transparent;">
-  <img src="assets/img/full.png" alt="" data-aos="fade-in" style="position: absolute; top: -50px; left: 0; width: 100%; height: auto; object-fit: cover; z-index: -1;">
+    <!-- Hero Section -->
+    <section id="home" class="hero section dark-background"
+      style="position: relative; min-height: 100vh; overflow: hidden; background: transparent;">
+      <img src="assets/img/gradPic.jpg" alt="" data-aos="fade-in"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; object-fit: cover; z-index: -1;">
 
-  <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100" style="position: relative; z-index: 1; color: white;">
-    <h2>I am Thomas Collins</h2>
-    <p><span class="typed" data-typed-items="Software Engineer, Web Developer"></span></p>
-  </div>
-</section><!-- /Hero Section -->
-
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up"
+        data-aos-delay="100" style="position: relative; z-index: 1; color: white;">
+        <h2>I am Thomas Collins</h2>
+        <p><span class="typed" data-typed-items="Software Engineer, Web Developer"></span></p>
+      </div>
+    </section>
+    <!-- /Hero Section -->
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
           <div class="col-md-6">
-
             <div class="row justify-content-between gy-4">
               <div class="col-lg-5">
-                <img src="assets/img/face.PNG" alt="" style="width: 60%; height: 100%; max-height: 300px;">
+                <img src="assets/img/profilePic.jpg" alt="" style="width: 50%; height: 100%; max-height: 200px;">
               </div>
               <div class="col-lg-7 about-info">
                 <p><strong>Name: </strong> <span>Thomas Collins</span></p>
@@ -185,18 +186,16 @@
                 each of them.
               </p>
               <p>
-                From my father (Financial Advisor), I want to have his competitive work ethic that never backs down.
+                From my father (Financial Advisor), I learned his competitive spirit.
               </p>
               <p>
                 From my mother (Fourth Grade teacher, Retired), I strive to illustrate her authenticity.
               </p>
               <p>
-                From my sister (Tech Sales), I learned how to let go and have fun with life every once in a while!
+                From my sister (Tech Sales), I learned how to communicate more effectively
               </p>
               <p>
-                From my brother (Software Developer), he taught me how to persevere, even if you have to persevere
-                alone.
-              </p>
+                From my brother (Software Developer), he taught me how to persevere through complex problems
 
             </div>
           </div>
@@ -280,13 +279,17 @@
     </section><!-- /Resume Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="projects" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
         <p>Creating projects from scratch and working through the setbacks has helped me to diversify my approach to
-          developing </p>
+          developing. </p>
+          <p class="highlighted-text">
+            Click on icons to check out corresponding project GitHub repo
+          </p>
+          
       </div><!-- End Section Title -->
       <div class="container">
         <div class="row gy-4">
@@ -296,74 +299,81 @@
               <div class="icon">
                 <i class="bi bi-activity"></i>
               </div>
-              <a href="#" class="stretched-link">
+              <a href="https://github.com/thco8465/OmniPotent" class="stretched-link">
                 <h3>OmniPotent</h3>
               </a>
               <p>Memory games to help reduce the onset of early dementia.</p>
+              <div class="tags">
+                <span class="tag">C++</span>
+                <span class="tag">Vue3</span>
+                <span class="tag">PostgreSQL</span>
+                <!-- Add more tags as needed -->
+              </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-broadcast"></i>
+                <i class="bi bi-headphones"></i>
               </div>
-              <a href="#" class="stretched-link">
+              <a href="https://github.com/thco8465/musicalMatch" class="stretched-link">
                 <h3>MusicalMatchMaker</h3>
               </a>
-              <p>Uses musical preference through spotify's api to match people with similar music taste</p>
+              <p>Uses musical preference through Spotify's API to match people with similar music taste.</p>
+              <span class="tag">Vue3</span>
+              <span class="tag">Spotify API</span>
+              <span class="tag">PostgreSQL</span>
             </div>
           </div><!-- End Service Item -->
+
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="bi bi-list-task"></i>
               </div>
-              <a href="#" class="stretched-link">
+              <a href="https://github.com/CSCI-3308-CU-Boulder/Taskbuff" class="stretched-link">
                 <h3>TaskBuff</h3>
               </a>
               <p>Organize daily goals and tasks with friends on a shared calendar to keep each other accountable</p>
+              <span class="tag">React</span>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+                <i class="bi bi-controller"></i>
               </div>
               <a href="#" class="stretched-link">
                 <h3>GameSpective</h3>
               </a>
               <p>Keep track of a user's games played, their reviews, and allow others to view and suggest games.</p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+                <i class="bi bi-suit-club"></i>
               </div>
-              <a href="#" class="stretched-link">
+              <a href="https://github.com/tayloretodd/csci3010_hw5" class="stretched-link">
                 <h3>BlackJack</h3>
               </a>
               <p>Created a simiple replication of blackjack using QtCreator for graphic implementation</p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+                <i class="bi bi-magic"></i>
               </div>
-              <a href="#" class="stretched-link">
+              <a href="https://github.com/CSCI-4448-5448-OOAD/project-4-arcane-thco8465" class="stretched-link">
                 <h3>ARCANE: Adventure Game</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
-                recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
+              <p>Learned object oriented design principles to create a tile-based game using Java.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -418,3 +428,17 @@
 </body>
 
 </html>
+<style>
+  .highlighted-text {
+  background-color: lightblue; /* Background color to make it pop */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding for spacing around the text */
+  border-radius: 8px; /* Rounded corners */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to give a 3D effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+
+
+</style>
